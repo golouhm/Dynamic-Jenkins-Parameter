@@ -18,10 +18,19 @@
   <f:entry title="Options" field="valueOptions" description="List options, one per line available for the first parameter">
     <f:textarea />
   </f:entry>
+  <f:entry title="Script" field="firstBashScript" description="The name of the script that generates options">
+    <f:textbox />
+  </f:entry>
   <f:entry title="Name" field="secondName" description="The name of the parameter set by the second select box">
     <f:textbox />
   </f:entry>
   <f:entry title="Options" field="dynamicValueOptions" description="List options, one per line available for the second parameter, prefix with the value of the first parameter and a colon to determine which should show for each possible first parameter value">
     <f:textarea />
+  </f:entry>
+  <f:entry title="Script" field="secondBashScript" description="The name of the script that generates options">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Cache script results" field="cacheScriptResults">
+    <f:checkbox checked="${instance.cacheScriptResults}"/>
   </f:entry>
 </j:jelly>
